@@ -74,13 +74,6 @@ blocklist.background.startBackgroundListeners = function () {
   )
 };
 
-/*
- * get hostname from url
- *
- * ex) https://example.com/foo.html      → example.com
- *     http://example.com/               → example.com
- *     https://example.com/bar/foo.html  → example.com
- */
 blocklist.background.getHostNameFromUrl = function (pattern) {
   return pattern.replace(blocklist.background.HOST_REGEX, '$2');
 }
