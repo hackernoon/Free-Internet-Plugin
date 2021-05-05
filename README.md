@@ -44,5 +44,5 @@
 ## Acknowledgements
 
 We are grateful to the authors of existing related projects for their ideas and contribution:
-uBLacklist
-Personal Blocklist
+* uBLacklist
+* Personal Blocklist
