@@ -100,11 +100,11 @@ blocklist.content.addBlocklistFromSearchResult = function (hostlink, searchresul
 };
 
 blocklist.content.insertAddBlockLinkInSearchResult = function (searchResult, hostlink) {
-  var insertLink = document.createElement('p');
-  insertLink.innerHTML = `report ${hostlink} as paywall`;
+  var insertLink = document.createElement('li');
+  insertLink.innerHTML = `report ${hostlink}`;
   insertLink.style.cssText =
-    "color:#1a0dab;margin:0;text-decoration:underline;cursor: pointer;";
-  searchResult.appendChild(insertLink);
+    "color:#3c4043;padding: 7px 18px;";
+    searchResult.querySelector('ol.action-menu-panel').appendChild(insertLink);
 
   insertLink.addEventListener("click", function () {
     blocklist.content.addBlocklistFromSearchResult(hostlink, searchResult);

@@ -11,7 +11,6 @@ body {
 }
 
 #header {
-  padding: 10px 20px;
   background: #0b0;
 }
 
@@ -21,10 +20,25 @@ body {
   padding-right: 10px;
   position: relative;
   top: 8px;
+  padding-left: 1em;
 }
 
 #header h1 {
   font-size: 18px;
+}
+#header div {
+  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #003b00;
+  height: 1.5em;
+  color: white;
+}
+
+#header div a {
+  color: white;
+  padding-left: 5px;
 }
 
 #button {
