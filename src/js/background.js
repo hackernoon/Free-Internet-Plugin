@@ -15,6 +15,7 @@ blocklist.background.startBackgroundListeners = function () {
   chrome.runtime.onMessage.addListener(
     function (request, sender, sendResponse) {
       if (request.type == blocklist.background.GET_BLOCKLIST) {
+        //put blocked urls here ⬇️
         let blocklistPatterns = [];
         if (!localStorage.blocklist) {
           localStorage['blocklist'] = JSON.stringify(blocklistPatterns);
