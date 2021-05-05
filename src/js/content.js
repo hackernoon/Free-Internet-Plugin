@@ -5,11 +5,6 @@ blocklist.content.blocklist = [];
 
 blocklist.content.mutationObserver = null;
 
-
-blocklist.content.SEARCH_RESULT_DIV_BOX = "div.g";
-
-blocklist.content.LINK_TAG = "div.yuRUbf > a";
-
 blocklist.content.handleGetBlocklistResponse = function (response) {
   if (response.blocklist != undefined) {
     blocklist.content.blocklist = response.blocklist;
@@ -78,11 +73,11 @@ blocklist.content.deleteSectionsFromSearchResult = function (pattern) {
 };
 
 blocklist.content.toggleSections = function (pattern, display) {
-  var searchResultPatterns = document.querySelectorAll(blocklist.content.SEARCH_RESULT_DIV_BOX);
+  var searchResultPatterns = document.querySelectorAll("div.g");
 
   for (let i = 0, length = searchResultPatterns.length; i < length; i++) {
     var searchResultPattern = searchResultPatterns[i];
-    var searchResultHostLink = searchResultPattern.querySelector(blocklist.content.LINK_TAG);
+    var searchResultHostLink = searchResultPattern.querySelector("div.yuRUbf > a");
     if (searchResultHostLink) {
       var HostLinkHref = searchResultHostLink.getAttribute("href");
       var sectionLink = HostLinkHref.replace(blocklist.background.HOST_REGEX, '$2');
@@ -119,11 +114,11 @@ blocklist.content.insertAddBlockLinkInSearchResult = function (searchResult, hos
 blocklist.content.modifySearchResults = function (parent_dom) {
 
 
-  var searchResultPatterns = parent_dom.querySelectorAll(blocklist.content.SEARCH_RESULT_DIV_BOX);
+  var searchResultPatterns = parent_dom.querySelectorAll("div.g");
 
   for (let i = 0, length = searchResultPatterns.length; i < length; i++) {
     var searchResultPattern = searchResultPatterns[i];
-    var searchResultHostLink = searchResultPattern.querySelector(blocklist.content.LINK_TAG);
+    var searchResultHostLink = searchResultPattern.querySelector("div.yuRUbf > a");
     if (searchResultHostLink) {
       var HostLinkHref = searchResultHostLink.getAttribute("href");
       var HostLinkPattern = blocklist.background.getHostNameFromUrl(HostLinkHref);
