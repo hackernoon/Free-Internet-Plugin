@@ -28,7 +28,7 @@ blocklist.content.handleAddBlocklistFromSerachResult = function (response) {
 blocklist.content.showAddBlocklistMessage = function (pattern, section) {
   let showMessage = document.createElement('div');
   showMessage.style.cssText = 'font-size:15px;background:#0f0;padding:30px;margin:20px 0;box-sizing:border-box;';
-  showMessage.innerHTML = `Blocked ${pattern}`;
+  showMessage.innerHTML = `The Free Internet Plugin by HackerNoon has now blocked ${pattern} from surfacing in your search results.`;
 
   let cancelMessage = document.createElement('div');
   cancelMessage.classList.add("cancleBlock");
