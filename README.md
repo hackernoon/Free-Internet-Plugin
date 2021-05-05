@@ -6,6 +6,12 @@ A free Internet is a better Internet. **This Chrome browser plugin removes paywa
 
 If you don’t want to pay for the story, the headline shouldn’t even be an option to click. The business model of paywalls - i.e. annoy the user with a bait and switch ad for content a hundred times, and then they convert and pay every month until they die - hinders the internet’s ability to be a free and open experience. Hacker Noon believes that if the user doesn’t want to run into a paywall, they should be able to filter paywalled content out of its search results and newsfeeds. This plugin removes known paywalled sites from your Google results. 
 
+## Developer Install:
+
+* Download the source code
+* Open chrome://extensions in Google Chrome
+* Click 'Load Unpacked Extension' and select the root extension folder
+
 ## Currently Blocked Sites By Default:
 * adelaidenow.com.au
 * adweek.com
