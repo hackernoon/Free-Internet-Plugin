@@ -2,6 +2,46 @@ let blocklist = {};
 
 blocklist.background = {};
 
+var urls = [
+  "bild.de",
+  "bloomberg.com",
+  "boston.com",
+  "bostonglobe.com",
+  "businessinsider.com",
+  "chicagotribune.com",
+  "dagbladet.no",
+  "dallasnews.com",
+  "dev.to",
+  "economist.com",
+  "ft.com",
+  "handelsblatt.com",
+  "hnytimes.com",
+  "houstonchronicle.com",
+  "latimes.com",
+  "makerpad.co",
+  "medium.com",
+  "newsweek.com",
+  "nymag.com",
+  "politico.com",
+  "seekingalpha.com",
+  "techradar.com",
+  "theathletic.com",
+  "theatlantic.com",
+  "thedailybeast.com",
+  "theguardian.com",
+  "theinformation.com",
+  "thetimes.co.uk",
+  "time.com",
+  "towardsdatascience.com",
+  "usatoday.com",
+  "uxdesign.cc",
+  "vogue.com",
+  "washingtonpost.com",
+  "wired.com",
+  "wsj.com",
+  "wwd.com"
+]
+
 
 blocklist.background.GET_BLOCKLIST = 'getBlocklist';
 blocklist.background.ADD_TO_BLOCKLIST = 'addToBlocklist';
@@ -16,7 +56,7 @@ blocklist.background.startBackgroundListeners = function () {
     function (request, sender, sendResponse) {
       if (request.type == blocklist.background.GET_BLOCKLIST) {
         //put blocked urls here ⬇️
-        let blocklistPatterns = [];
+        let blocklistPatterns = urls;
         if (!localStorage.blocklist) {
           localStorage['blocklist'] = JSON.stringify(blocklistPatterns);
         } else {
@@ -70,7 +110,7 @@ blocklist.background.startBackgroundListeners = function () {
             pattern: request.pattern
           });
         }
-      } 
+      }
     }
   )
 };
