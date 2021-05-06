@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+}
+
+body {
+    background-color: #00FF00;
+}
+
+#top {
+    width: 100%;
+    height: 100%;
+    background-color: #00FF00;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: white;
+    font-size: 4rem;
+}
+
+.subtitle {
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#links {
+    margin-top: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    width: 4rem;
+    height: auto;
+    margin: 0 2vw;
+    filter: brightness(0) invert(1);
+}
+
+.icon:hover {
+    width: 4rem;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.75;
+}
+
+#arrow {
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    bottom: 0;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+
+@keyframes example {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-40px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+#bottom {
+    width: 100%;
+    min-height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    margin: 2% 0;
+    width: 48%;
+}
+
+.bottom-title {
+    font-size: 2.5rem;
+    text-decoration: underline; 
+    text-decoration-color: #00FF00;
+    text-align: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list * {
+    margin-top: 4%;
+    font-size: 1.3em;
+    color: #646464;
+}
+
+
+#footer {
+    width: 100%;
+    height: 7vh;
+    background-color: #00FF00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-title {
+    color: white;
+    font-size: 3vh;
+}
+
+@media (max-width:700px){
+    #bottom{
+        flex-direction: column;
+    }
+
+    .card {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
