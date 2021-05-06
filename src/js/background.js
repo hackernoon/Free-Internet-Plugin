@@ -18,7 +18,6 @@ var urls = [
   "csmonitor.com",
   "dagbladet.no",
   "dallasnews.com",
-  "dev.to",
   "dpgmedia.nl",
   "economist.com",
   "fijitimes.com.fj",
