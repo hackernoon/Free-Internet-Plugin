@@ -101,9 +101,13 @@ blocklist.content.addBlocklistFromSearchResult = function (hostlink, searchresul
 
 blocklist.content.insertAddBlockLinkInSearchResult = function (searchResult, hostlink) {
   var insertLink = document.createElement('li');
-  insertLink.innerHTML = `report ${hostlink}`;
-  insertLink.style.cssText =
-    "color:#3c4043;padding: 7px 18px;";
+  var ank = document.createElement('a');
+  var span = document.createElement('span');
+  span.innerHTML = `report ${hostlink}`;
+  insertLink.classList.add("action-menu-item")
+  ank.classList.add("fl")
+  ank.appendChild(span)
+  insertLink.appendChild(ank)
     searchResult.querySelector('ol.action-menu-panel').appendChild(insertLink);
 
   insertLink.addEventListener("click", function () {
