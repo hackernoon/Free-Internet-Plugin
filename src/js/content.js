@@ -1,6 +1,30 @@
 
 blocklist.content = {};
 
+const zingers = [
+  `NATURE IS HEALING: This paywalled site has been removed from your search results.`,
+  `YOU. SHALL. NOT. PASS. (THIS PAYWALL)`,
+  `Four legs good, paywalls bad.`,
+  `ONE DOES NOT SIMPLY SUPPORT PAYWALLS`,
+  `Paywalls, so cheugy right now.`,
+  `YOU GET A PAYWALL! YOU GET A PAYWALL! EVERY. BODY. GETS A PAYWALL!`,
+  `Paywalls, so cheugy right now.`
+]
+
+const memes = [
+  "image1.jpg",
+  "image2.jpg",
+  "image3.jpg",
+  "image5.jpg",
+  "image4.png",
+  "image6.png"
+]
+
+function getRand(len) {
+  return (
+    Math.floor(Math.random() * len))
+}
+
 blocklist.content.blocklist = [];
 
 blocklist.content.mutationObserver = null;
@@ -28,7 +52,12 @@ blocklist.content.handleAddBlocklistFromSerachResult = function (response) {
 blocklist.content.showAddBlocklistMessage = function (pattern, section) {
   let showMessage = document.createElement('div');
   showMessage.style.cssText = 'font-size:15px;background:#0f0;padding:30px;margin:20px 0;box-sizing:border-box;';
-  showMessage.innerHTML = `The Free Internet Plugin by HackerNoon has now blocked ${pattern} from surfacing in your search results.`;
+  showMessage.innerHTML = zingers[getRand(zingers.length)];
+
+  var image = document.createElement('img');
+  image.style.cssText = "max-width: 120px; height: auto"
+  image.src = chrome.runtime.getURL(`images/memes/${memes[getRand(memes.length)]}`);
+  showMessage.appendChild(image)
 
   let cancelMessage = document.createElement('div');
   cancelMessage.classList.add("cancleBlock");
@@ -108,7 +137,7 @@ blocklist.content.insertAddBlockLinkInSearchResult = function (searchResult, hos
   ank.classList.add("fl")
   ank.appendChild(span)
   insertLink.appendChild(ank)
-    searchResult.querySelector('ol.action-menu-panel').appendChild(insertLink);
+  searchResult.querySelector('ol.action-menu-panel').appendChild(insertLink);
 
   insertLink.addEventListener("click", function () {
     blocklist.content.addBlocklistFromSearchResult(hostlink, searchResult);
