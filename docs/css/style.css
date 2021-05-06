@@ -25,21 +25,21 @@ body {
 
 .title {
     color: white;
-    font-size: 3.5rem;
+    font-size: 3em;
     font-weight: bolder;
     text-align: center;
 }
 
 .subtitle {
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
-    padding: 0.25em 0;
+    padding: 1vh 0;
 }
 
 #links {
     width: 100%;
-    margin-top: 2em;
+    margin-top: 1.5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
