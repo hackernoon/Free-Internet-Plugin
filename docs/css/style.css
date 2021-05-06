@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #00FF00;
+    background-color: #00E000;
 }
 
 #top {
@@ -17,13 +17,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .title {
     color: white;
     font-size: 3.5rem;
     font-weight: bolder;
+    text-align: center;
 }
 
 .subtitle {
@@ -33,31 +34,27 @@ body {
 }
 
 #links {
+    width: 100%;
     margin-top: 1%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .icon {
-    width: 4rem;
+    width: 10vw;
     height: auto;
     margin: 0 2vw;
     filter: brightness(0) invert(1);
 }
 
 .icon:hover {
-    width: 4rem;
-    height: auto;
-    filter: brightness(0) invert(1);
     opacity: 0.75;
 }
 
 #arrow {
     height: 4rem;
     width: 4rem;
-    position: absolute;
-    bottom: 0;
     animation-name: example;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
