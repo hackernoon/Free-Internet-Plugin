@@ -23,7 +23,7 @@ module.exports = {
           position: 'left',
           label: 'Tutorial',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        {to: 'https://hackernoon.com/tagged/free-internet-plugin', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/hackernoon/Free-Internet-Plugin',
           label: 'GitHub',
