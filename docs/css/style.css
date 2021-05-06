@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Helvetica Neue', Helvetica;
 }
 
 body {
@@ -22,12 +22,13 @@ body {
 
 .title {
     color: white;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    font-weight: bolder;
 }
 
 .subtitle {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
