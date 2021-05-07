@@ -8,6 +8,10 @@
 
     font-family: 'Helvetica Neue', Helvetica;
 }
+@font-face {
+    font-family: 'pixelFont';
+    src:  url('PressStart2P-Regular.ttf');
+  }
 
 body {
     background-color: #000;
@@ -15,6 +19,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+#timer {
+    font-family: 'pixelFont';
 }
 
 form {
