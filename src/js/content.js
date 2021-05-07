@@ -51,13 +51,9 @@ blocklist.content.handleAddBlocklistFromSerachResult = function (response) {
 
 blocklist.content.showAddBlocklistMessage = function (pattern, section) {
   let showMessage = document.createElement('div');
-  showMessage.style.cssText = 'font-size:15px;background:#0f0;padding:30px;margin:20px 0;box-sizing:border-box;';
-  showMessage.innerHTML = zingers[getRand(zingers.length)];
+  showMessage.innerHTML = `<div style="width: 600px; height: 98px; background-color: #00E000; display: flex; justify-content: space-between;"> <div><h1>${zingers[getRand(zingers.length)]}</h1> <h2 id="undo">undro</h2></div><img src=${chrome.runtime.getURL(`images/memes/${memes[getRand(memes.length)]}`)} style="height: 98px; width: auto;"></div>`
 
-  var image = document.createElement('img');
-  image.style.cssText = "max-width: 120px; height: auto"
-  image.src = chrome.runtime.getURL(`images/memes/${memes[getRand(memes.length)]}`);
-  showMessage.appendChild(image)
+
 
   let cancelMessage = document.createElement('div');
   cancelMessage.classList.add("cancleBlock");
@@ -130,14 +126,9 @@ blocklist.content.addBlocklistFromSearchResult = function (hostlink, searchresul
 
 blocklist.content.insertAddBlockLinkInSearchResult = function (searchResult, hostlink) {
   var insertLink = document.createElement('li');
-  var ank = document.createElement('a');
-  var span = document.createElement('span');
-  span.innerHTML = `report ${hostlink}`;
+  insertLink.innerHTML = `<a class="fl"><span>report ${hostlink}</span></a>`
   insertLink.classList.add("action-menu-item")
-  ank.classList.add("fl")
-  ank.appendChild(span)
-  insertLink.appendChild(ank)
-  searchResult.querySelector('ol.action-menu-panel').appendChild(insertLink);
+  searchResult.querySelector('.action-menu-panel').appendChild(insertLink);
 
   insertLink.addEventListener("click", function () {
     blocklist.content.addBlocklistFromSearchResult(hostlink, searchResult);
