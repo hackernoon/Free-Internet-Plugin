@@ -29,7 +29,8 @@ form {
     margin-right: 0.5em;
     border-radius: 1em;
     padding: 0.25em;
-    border: none;
+    border: 1px solid #333;
+    background-color: #000;
 }
 .button {
     font-size: 1.5em;
