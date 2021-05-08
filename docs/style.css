@@ -27,6 +27,7 @@ body {
 form {
     display: flex;
     align-items: center;
+    max-width: 90%;
 }
 
 #input {
@@ -40,7 +41,7 @@ form {
     background-color: #000;
 }
 .button {
-    font-size: 1.5em;
+    font-size: 1.25em;
     height: 2em;
     background-color: #000;
     border: none;
@@ -48,3 +49,5 @@ form {
     color: #00FF00;
     border-radius: 1em;
 }
+
+
