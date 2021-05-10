@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,8 +7,19 @@
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5H7EK72L90"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5H7EK72L90');
+    </script>
+
     <title>Free Internet Plugin</title>
 </head>
+
 <body onload="typeWriter()">
 
     <div id="top">
@@ -16,51 +28,57 @@
             <a href="" class="link">Contribute</a>
             <a href="" class="link">Donate</a>
         </div>
-        <h3 class="subtitle" id="desk">Google Should Give Users the Option To Deindex All Paywalled Sites. They Won’t Step Up, So We Will. Introducing...</h3>
+        <h3 class="subtitle" id="desk">Google Should Give Users the Option To Deindex All Paywalled Sites. They Won’t
+            Step Up, So We Will. Introducing...</h3>
         <div id="about">
             <h1 id="title"></h1>
             <h3 class="subtitle">Open-Sourced by HackerNoon</h3>
-            <h3 class="subtitle">Because <span  style="font-weight: bolder; font-size: 1.4em;">F*ck PayWalls</span></h3>
+            <h3 class="subtitle">Because <span style="font-weight: bolder; font-size: 1.4em;">F*ck PayWalls</span></h3>
         </div>
-        
+
 
         <div id="mail">
-            <h2 class="subtitle" style="margin-bottom: 0.5em;">If you want to stay up to date, here's the mailing list! No spam ever, just great stuf :) </h2>
+            <h2 class="subtitle" style="margin-bottom: 0.5em;">If you want to stay up to date, here's the mailing list!
+                No spam ever, just great stuf :) </h2>
 
-        <div id="mlb2-4061482" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-4061482">
-            <div class="ml-form-align-center">
-                <div class="ml-form-embedWrapper embedForm">
-                    <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-                        <div class="ml-form-embedContent" style="margin-bottom:0"></div>
-                        <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/b9j1p7"
-                            data-code="b9j1p7" method="post" target="_blank">
-                            <div class="ml-form-formContent">
-                                <div class="ml-form-fieldRow ml-last-item">
-                                    <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                        <input aria-label="email" aria-required="true" type="email" class="form-control"
-                                            data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email" id="input">
+            <div id="mlb2-4061482" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-4061482">
+                <div class="ml-form-align-center">
+                    <div class="ml-form-embedWrapper embedForm">
+                        <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                            <div class="ml-form-embedContent" style="margin-bottom:0"></div>
+                            <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/b9j1p7"
+                                data-code="b9j1p7" method="post" target="_blank">
+                                <div class="ml-form-formContent">
+                                    <div class="ml-form-fieldRow ml-last-item">
+                                        <div
+                                            class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                                            <input aria-label="email" aria-required="true" type="email"
+                                                class="form-control" data-inputmask="" name="fields[email]"
+                                                placeholder="Email" autocomplete="email" id="input">
+                                        </div>
                                     </div>
                                 </div>
+                                <input type="hidden" name="ml-submit" value="1">
+                                <div class="ml-form-embedSubmit">
+                                    <button type="submit" class="primary button">Subscribe</button>
+                                    <button disabled="disabled" style="display:none" type="button"
+                                        class="loading button">
+                                        <div class="ml-form-embedSubmitLoad"></div> <span
+                                            class="sr-only">Loading...</span>
+                                    </button>
+                                </div>
+                                <input type="hidden" name="anticsrf" value="true">
+                            </form>
+                        </div>
+                        <div class="ml-form-successBody row-success" style="display:none">
+                            <div class="ml-form-successContent">
+                                <h4>Thank you!</h4>
+                                <p>You have successfully joined our subscriber list.</p>
                             </div>
-                            <input type="hidden" name="ml-submit" value="1">
-                            <div class="ml-form-embedSubmit">
-                                <button type="submit" class="primary button">Subscribe</button>
-                                <button disabled="disabled" style="display:none" type="button" class="loading button">
-                                    <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span>
-                                </button>
-                            </div>
-                            <input type="hidden" name="anticsrf" value="true">
-                        </form>
-                    </div>
-                    <div class="ml-form-successBody row-success" style="display:none">
-                        <div class="ml-form-successContent">
-                            <h4>Thank you!</h4>
-                            <p>You have successfully joined our subscriber list.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
 
 
@@ -86,4 +104,5 @@
 
     <script src="./js/script.js"></script>
 </body>
+
 </html>
