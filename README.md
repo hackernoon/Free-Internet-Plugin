@@ -1,9 +1,5 @@
 # The Free Internet Plugin
 
-[![Hack(er Noon) the World!](
-
-https://giphy.com/gifs/hackers-hacking-FnGJfc18tDDHy
-
 A free Internet is a better Internet. **This Chrome browser plugin removes paywalled content from Google search results.**
 
 If you don’t want to pay for the story, the headline shouldn’t even be an option to click. The business model of paywalls - i.e. annoy the user with a bait and switch ad for content a hundred times, and then they convert and pay every month until they die - hinders the internet’s ability to be a free and open experience. Hacker Noon believes that if the user doesn’t want to run into a paywall, they should be able to filter paywalled content out of its search results and newsfeeds.
