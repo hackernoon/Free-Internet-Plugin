@@ -4,34 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-
-    <meta key="description" name="description"
-        content="If you don’t want to pay for the experience, the headline shouldn’t even be an option to click. We take care of paywalls from your google results for you!" />
-    <meta property="og:title" content="Free Internet Plugin" />
-    <meta property="og:description"
-        content="If you don’t want to pay for the experience, the headline shouldn’t even be an option to click. We take care of paywalls from your google results for you!" />
-    <meta key="mobileWebAppCapable" name="mobile-web-app-capable" content="yes" />
-
-    <meta key="appleMobileWebAppTitle" name="apple-mobile-web-app-title" content="Free Internet Plugin" />
-    <meta key="appleMobileWebAppCapable" name="apple-mobile-web-app-capable" content="yes" />
-    <meta key="appleMobileWebAppStatusBarStyle" name="apple-mobile-web-app-status-bar-style" content="default" />
-    <meta key="xUACompatible" httpEquiv="X-UA-Compatible" content="IE=edge" />
-    <meta key="viewport" name="viewport"
-        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <meta key="keywords" name="keywords"
-        content="Free Internet Plugin Fuck Paywalls Fuck-Paywalls HackerNoon Guy Torbet" />
-
-    <meta key="ogImage" property="og:image" content="./icon128.png" />
-    <meta key="ogUrl" property="og:url" content="https://freeinternetplugin.com" />
-    
-    <meta key="twitterCard" name="twitter:card" content="summary" >
-    <meta key="twitterSite" name="twitter:site" content="@guytorbet" >
-    <meta name="twitter:title" content="Free Internet Plugin" >
-    <meta name="twitter:description" content="If you don’t want to pay for the experience, the headline shouldn’t even be an option to click. We take care of paywalls from your google results for you!" >
-    <meta key="twitterImage" property="twitter:image" content="https://freeinternetplugin.com/icon128.png" >
-    
-    <link rel="shortcut icon" type="image/png" href="/icon16.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5H7EK72L90"></script>
@@ -46,60 +20,46 @@
     <title>Free Internet Plugin</title>
 </head>
 
-<body>
-    <h1 style="margin-bottom: 1.5em;">The Free Internet Plugin....</h1>
-    <h2>Coming Soon! in: </h2>
-    <h1 style="margin-bottom: 1.5em; font-size: 3em; line-clamp: 2;" id="timer">days hrs mins secs</h1>
+<body onload="pageLoad()" onscroll="subPage()">
 
-    <h4>If you want to stay up to date, here's the mailing list! No spam ever, just great stuff :) </h4>
-
-
-
-    <div id="mlb2-4061482" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-4061482">
-        <div class="ml-form-align-center">
-            <div class="ml-form-embedWrapper embedForm">
-                <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
-                    <div class="ml-form-embedContent" style="margin-bottom:0"></div>
-                    <form class="ml-block-form" action="https://static.mailerlite.com/webforms/submit/b9j1p7"
-                        data-code="b9j1p7" method="post" target="_blank">
-                        <div class="ml-form-formContent">
-                            <div class="ml-form-fieldRow ml-last-item">
-                                <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
-                                    <input aria-label="email" aria-required="true" type="email" class="form-control"
-                                        data-inputmask="" name="fields[email]" placeholder="Email" autocomplete="email"
-                                        id="input">
-                                </div>
-                            </div>
-                        </div>
-                        <input type="hidden" name="ml-submit" value="1">
-                        <div class="ml-form-embedSubmit">
-                            <button type="submit" class="primary button">Subscribe</button>
-                            <button disabled="disabled" style="display:none" type="button" class="loading button">
-                                <div class="ml-form-embedSubmitLoad"></div> <span class="sr-only">Loading...</span>
-                            </button>
-                        </div>
-                        <input type="hidden" name="anticsrf" value="true">
-                    </form>
-                </div>
-                <div class="ml-form-successBody row-success" style="display:none">
-                    <div class="ml-form-successContent">
-                        <h4>Thank you!</h4>
-                        <p>You have successfully joined our subscriber list.</p>
-                    </div>
-                </div>
-            </div>
+    <div id="top">
+        <div id="links">
+            <a href="https://github.com/hackernoon/Free-Internet-Plugin" class="link linkItem">Contribute</a>
+            <a href="" class="link linkItem">Donate</a>
+            <a href="" class="link linkItem">Subscribe</a>
         </div>
+        <div id="repo" class="subtitle"></div>
+        <div>
+                <h1 class="title" id="mainTitle"></h1>
+                <h2 class="subtitle">Open-Sourced by HackerNoon</h2>
+                <h2 class="subtitle">Because <span style="font-weight: bolder; font-size: 1.4em;">F*ck PayWalls</span></h2>
+            </div>
+            <div>
+                <h1 class="title"> <a href="https://chrome.google.com/webstore/detail/the-free-internet-plugin/lodclhfimkjdjmmjgeioendfjpgoghoo?hl=en-US" class="linkItem">Install</a> </h1>
+                <h2 class="subtitle">The Chrome browser plugin to remove paywalled content from Google search results.</h2>
+            </div>
+
+        <img src="./images/arrow.svg" alt="arrow" id="arrow">
     </div>
-    <script>
-        function ml_webform_success_4061482() { var r = ml_jQuery || jQuery; r(".ml-subscribe-form-4061482 .row-success").show(), r(".ml-subscribe-form-4061482 .row-form").hide() }
-    </script>
-    <img src="https://track.mailerlite.com/webforms/o/4061482/b9j1p7?v1620425546" width="1" height="1"
-        style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
-    <script src="https://static.mailerlite.com/js/w/webforms.min.js?v0c75f831c56857441820dcec3163967c"
-        type="text/javascript"></script>
 
-    <script src="script.js" type="text/javascript"></script>
+    <div id="bottom">
 
+        <div class="card">
+            <h1 class="title" id="whyTitle"></h1>
+            <p class="para">A free Internet is a better Internet. This Chrome browser plugin removes paywalled content from Google search results.</p>
+            <p class="para">If you don’t want to pay for the story, the headline shouldn’t be an option. The business model of paywalls—i.e. annoy the user with a bait-and-switch ad a hundred times, when they convert and pay every month until they die—hinders the internet’s ability to be a free and open experience. Hacker Noon believes that if the user doesn’t want to run into a paywall, they should be able to filter paywalled content out of its search results and newsfeeds. This plugin removes known paywalled sites from your Google results. </p>
+            <p class="para">The Free Internet Plugin is open sourced on Hacker Noon’s github. Suggestions to improve the plugin are much appreciated! If you’d like to support the development THE FREE INTERNET PLUGIN, you can donate here. </p>
+            
+        </div>
+        <div class="card">
+            <h1 class="title" id="whoTitle"></h1>
+            <ul id="contributors"></ul>
+        </div>
+      
+    </div>
+
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
