@@ -85,7 +85,7 @@ blocklist.background.startBackgroundListeners = function () {
 
       if (request == "updateCounter") {
         localStorage.totalBlocked = parseInt(localStorage.totalBlocked) + 1
-        socket.send(localStorage.totalBlocked)
+        socket.send(1)
       }
 
       else if (request.type == blocklist.background.GET_BLOCKLIST) {
@@ -157,7 +157,7 @@ blocklist.background.getHostNameFromUrl = function (pattern) {
 
 blocklist.background.startBackgroundListeners();
 
-var socket = new WebSocket('ws://localhost:8000')
+var socket = new WebSocket('ws://localhost:3035')
 
 socket.addEventListener('open', function (event) {
   socket.send(localStorage.totalBlocked);
