@@ -148,7 +148,13 @@ body {
     }
 
     #links {
-        display: none;
+        justify-content: center;
+    }
+
+    .link {
+        margin-top: 0;
+        margin-left: 0;
+        margin: 1em 1em;
     }
 
     #bottom {
