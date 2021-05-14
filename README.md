@@ -1,6 +1,8 @@
 # The Free Internet Plugin
 
-[![Hack(er Noon) the World!](https://img.youtube.com/vi/u3CKgkyc7Qo/0.jpg)](https://www.youtube.com/watch?v=u3CKgkyc7Qo)
+[![Hack(er Noon) the World!](
+
+https://giphy.com/gifs/hackers-hacking-FnGJfc18tDDHy
 
 A free Internet is a better Internet. **This Chrome browser plugin removes paywalled content from Google search results.**
 
