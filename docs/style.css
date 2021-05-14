@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0.2em;
+    box-sizing: border-box;
+
+    color: #00FF00;
+    text-align: center;
+
+    font-family: 'Helvetica Neue', Helvetica;
+}
+@font-face {
+    font-family: 'pixelFont';
+    src:  url('PressStart2P-Regular.ttf');
+  }
+
+body {
+    background-color: #000;
+    display: flex;
+    height: 100vh;
+    height: -webkit-fill-available;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#timer {
+    font-family: 'pixelFont';
+}
+
+form {
+    display: flex;
+    align-items: center;
+    max-width: 90%;
+}
+
+#input {
+    text-align: left;
+    font-size: 1.25em;
+    height: 2em;
+    margin-right: 0.5em;
+    border-radius: 1em;
+    padding: 0.5em;
+    border: 1px solid #333;
+    background-color: #000;
+}
+.button {
+    font-size: 1.25em;
+    height: 2em;
+    background-color: #000;
+    border: none;
+    padding: 0.25em;
+    color: #00FF00;
+    border-radius: 1em;
+}
+
+

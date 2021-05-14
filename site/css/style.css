@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'pixelFont';
+    src:  url('../fonts/PressStart2P-Regular.ttf');
+  }
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: #00FF00;
+    font-family: 'Helvetica Neue', Helvetica;
+
+    text-align: center;
+}
+
+.title {
+    font-family: 'pixelFont';
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+.subtitle {
+    font-size: 2em;
+}
+
+.linkItem {
+    color: #0F0;
+    text-decoration: none;
+    position: relative;
+    font-family: 'pixelFont';
+}
+
+.linkItem:before {
+    color: #000;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0F0;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.linkItem:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+body {
+    background-color: #000;
+}
+
+#top {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.link {
+    font-family: 'pixelFont';
+    text-decoration: none;
+
+    margin-top: 1em;
+    margin-left: 2em;
+}
+
+#mainTitle {
+    font-size: 4rem;
+}
+
+#arrow {
+    height: 4rem;
+    width: 4rem;
+    animation-name: arrow;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+
+#contributors {
+    cursor: pointer;
+    columns: 2;
+}
+#contributors a {
+    break-inside: avoid-column;
+}
+#contributors a:hover {
+    opacity: 0.5;
+}
+
+
+@keyframes arrow {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-40px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
+#bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.para {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.card {
+    width: 50%;
+
+    padding: 0 1em;
+}
+
+
+@media (max-width:700px){
+
+    .title {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .para {
+        font-size: 1.5em;
+    }
+
+    #mainTitle {
+        font-size: 2.5rem;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #bottom {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #contributors {
+        columns: 1;
+    }
+  
+}
