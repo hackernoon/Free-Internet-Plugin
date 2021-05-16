@@ -174,5 +174,11 @@ body {
     #contributors {
         columns: 1;
     }
+
+    #lower {
+        flex-direction: column-reverse;
+    }
+
+    #lower:nth-child(1) { order: 1; }
   
 }
