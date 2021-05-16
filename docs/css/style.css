@@ -82,6 +82,12 @@ body {
     font-size: 4rem;
 }
 
+#lower {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #arrow {
     height: 4rem;
     width: 4rem;
