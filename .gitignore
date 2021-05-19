@@ -1,2 +1,8 @@
 # Ignore Mac system files
 .DS_store
+
+.vercel
+#NEVER AGAIN
+.env
+
+node_modules

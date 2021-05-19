@@ -8,7 +8,7 @@ arrow.addEventListener('click', () => {
 
 function pageLoad() {
   type('mainTitle', 'Free Internet Plugin', 50)
-  repo()
+  repoInfo()
   contribs()
 }
 
@@ -36,7 +36,7 @@ function subPage() {
 
 }
 
-const repo = async () => {
+const repoInfo = async () => {
   await fetch('https://api.github.com/repos/hackernoon/Free-Internet-Plugin').then(response => response.json())
     .then(data => {
       document.getElementById("repo").innerHTML = `Stars: ${data.stargazers_count} -  Forks: ${data.forks}  -  Watchers: ${data.subscribers_count}`
@@ -76,3 +76,11 @@ const contribs = async () => {
       }
     })
 }
+
+const getTotalBlocked = async () => {
+  await fetch('https://freeinternetplugin/api/').then(response => response.json())
+    .then(data => {
+      document.getElementById("counter").innerHTML = `blocked ${data.count} paywalls`
+    })
+}
+

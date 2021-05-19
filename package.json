@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "dotenv": "^9.0.2"
+  }
+}
