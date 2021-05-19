@@ -10,6 +10,7 @@ function pageLoad() {
   type('mainTitle', 'Free Internet Plugin', 50)
   repoInfo()
   contribs()
+  getTotalBlocked()
 }
 
 
@@ -78,8 +79,10 @@ const contribs = async () => {
 }
 
 const getTotalBlocked = async () => {
-  await fetch('https://freeinternetplugin/api/').then(response => response.json())
+  await fetch('https://freeinternetplugin.com/api').then(response => response.json())
     .then(data => {
+      console.log(data)
+      console.log("hello")
       document.getElementById("counter").innerHTML = `blocked ${data.count} paywalls`
     })
 }
