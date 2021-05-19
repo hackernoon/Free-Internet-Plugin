@@ -79,7 +79,7 @@ const contribs = async () => {
 }
 
 const getTotalBlocked = async () => {
-  await fetch('https://freeinternetplugin.com/api').then(response => response.json())
+  await fetch('https://freeinternetplugin.com/api/').then(response => response.json(), {mode: 'cors'})
     .then(data => {
       console.log(data)
       console.log("hello")
