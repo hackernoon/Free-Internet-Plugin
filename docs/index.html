@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="style.css">
 
      <meta key="description" name="description"
          content="If you don’t want to pay for the experience, the headline shouldn’t even be an option to click. We take care of paywalls from your google results for you!" />
@@ -52,11 +51,13 @@
 
     <div id="top">
         <div id="links">
-            <a href="https://github.com/hackernoon/Free-Internet-Plugin" class="link linkItem">Contribute</a>
-            <a href="http://hackernoon.com/signup" class="link linkItem">Subscribe</a>
+            <nav>
+                <a href="https://github.com/hackernoon/Free-Internet-Plugin" class="link linkItem">Contribute</a>
+                <a href="http://hackernoon.com/signup" class="link linkItem">Subscribe</a>
+            </nav>
+            <div id="repo" class="subtitle"></div>
         </div>
-        <div id="repo" class="subtitle"></div>
-        <div id="counter"></div>
+        <div class="subtitle" id="countThing">Blocked <span id="counter" class="title" ></span>Paywalls</div>
         <div>
                 <h1 class="title" id="mainTitle"></h1>
                 <h2 class="subtitle">Open-Sourced by HackerNoon</h2>

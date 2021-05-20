@@ -40,7 +40,7 @@ function subPage() {
 const repoInfo = async () => {
   await fetch('https://api.github.com/repos/hackernoon/Free-Internet-Plugin').then(response => response.json())
     .then(data => {
-      document.getElementById("repo").innerHTML = `Stars: ${data.stargazers_count} -  Forks: ${data.forks}  -  Watchers: ${data.subscribers_count}`
+      document.getElementById("repo").innerHTML = `Stars: ${data.stargazers_count}`
     })
 }
 
@@ -48,7 +48,6 @@ const contribs = async () => {
   await fetch('https://api.github.com/repos/hackernoon/Free-Internet-Plugin/contributors').then(response => response.json())
     .then(data => {
       for (let i = 0; i < data.length; i++) {
-        console.log(data[i])
 
         let row = document.createElement("a")
         row.href = data[i].html_url
@@ -81,9 +80,7 @@ const contribs = async () => {
 const getTotalBlocked = async () => {
   await fetch('https://freeinternetplugin.com/api/').then(response => response.json(), {mode: 'cors'})
     .then(data => {
-      console.log(data)
-      console.log("hello")
-      document.getElementById("counter").innerHTML = `blocked ${data.count} paywalls`
+      document.getElementById("counter").innerHTML = data.count
     })
 }
 

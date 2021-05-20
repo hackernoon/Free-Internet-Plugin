@@ -67,7 +67,11 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
 }
 
 .link {
@@ -78,8 +82,22 @@ body {
     margin-left: 2em;
 }
 
+#countThing {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+#counter {
+    padding: 0 .5em;
+}
+
 #mainTitle {
     font-size: 4rem;
+}
+
+#counter {
+    font-family: "pixelFont";
+    font-size: 2em;
 }
 
 #lower {
@@ -155,6 +173,7 @@ body {
 
     #links {
         justify-content: center;
+        flex-direction: column;
     }
 
     .link {
