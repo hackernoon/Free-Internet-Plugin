@@ -3,7 +3,11 @@
 A free Internet is a better Internet. **This Chrome browser plugin removes paywalled content from Google search results.**
 
 If you don’t want to pay for the story, the headline shouldn’t even be an option to click. The business model of paywalls - i.e. annoy the user with a bait and switch ad for content a hundred times, and then they convert and pay every month until they die - hinders the internet’s ability to be a free and open experience. Hacker Noon believes that if the user doesn’t want to run into a paywall, they should be able to filter paywalled content out of its search results and newsfeeds.
-This plugin removes known paywalled sites from your Google results. 
+This plugin removes known paywalled sites from your Google results.
+
+**NOTE:** At this time, the plugin only sanitizes results obtained from Google itself when visited or configured as your search provider - Not other search providers such as StartPage that may deliver anonymized or aggregated results from Google. Other search providers such as Gigablast, DuckDuckGo, and Bing are similarly not yet supported. Given time and the popularity of this plugin these other providers may also be supported in a future release.
+
+The plugin also works with most Chrome based browsers that have support for Chrome plugins and extensions, such as Vivaldi and Brave - not just Chrome.
 
 You can install it [here!](https://chrome.google.com/webstore/detail/the-free-internet-plugin/lodclhfimkjdjmmjgeioendfjpgoghoo)
 
