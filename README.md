@@ -87,6 +87,6 @@ You can install it [here!](https://chrome.google.com/webstore/detail/the-free-in
 ## Acknowledgements
 
 We are grateful to the authors of existing related projects for their ideas and contribution:
-* uBLacklist
+* [uBLacklist](https://github.com/iorate/uBlacklist)
 * Personal Blocklist
 * Read more about [decentralization](https://hackernoon.com/tagged/decentralization), [the internet](https://hackernoon.com/tagged/fix-the-internet), [media](https://hackernoon.com/search?query=media), [programming](https://hackernoon.com/tagged/programming), [startups](https://hackernoon.com/tagged/startup), [interviews](https://hackernoon.com/tagged/interview), [coding](https://hackernoon.com/tagged/coding) [tutorials](https://hackernoon.com/tagged/tutorial),  [life advice](https://hackernoon.com/tagged/self-improvement), and [why paywalls are stupid](https://hackernoon.com/search?query=paywall) via [HackerNoon](https://hackernoon.com).
